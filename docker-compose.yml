@@ -1,0 +1,48 @@
+version: '2'
+
+services:
+  mongodb:
+    image: docker.io/bitnami/mongodb:4.2
+    networks:
+      - IPTK_groupL_backend
+
+  express:
+    tty: true # Enables debugging capabilities when attached to this container.
+    image: docker.io/bitnami/express:4
+    command: ./start.sh
+    environment:
+      - PORT=80
+      - NODE_ENV=development
+      - DATABASE_URL=mongodb://mongodb:27017/swordrunner
+
+      - SKIP_DB_WAIT=0
+      - SKIP_DB_MIGRATION=0
+      - SKIP_NPM_INSTALL=0
+      - SKIP_BOWER_INSTALL=0
+    depends_on:
+      - mongodb
+    ports:
+      - 80:80
+    volumes:
+      - .:/app
+    networks:
+      - IPTK_groupL_backend
+
+  ws:
+    tty: true # Enables debugging capabilities when attached to this container.
+    image: docker.io/bitnami/express:4
+    command: node server.js
+    environment:
+      - PORT=3001
+
+    depends_on:
+      - mongodb
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    networks:
+      - IPTK_groupL_backend
+
+networks:
+  IPTK_groupL_backend:
