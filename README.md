@@ -6,4 +6,3 @@ Details can be found in Readme in branches, technical document can be found in t
 
 操作细节可以在分支的readme中找到，技术文档（包含效果）可以在others分支中找到。
 
-后续也会把各个部分的效果图放在issue中。
