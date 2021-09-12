@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#231A19</color>
+    <color name="light_blue">#353333</color>
+    <color name="fontBackground">#FFFFFF</color>
+    <color name="fontForeground">#FFFFFF</color>
+    <color name="gray">#65737E</color>
+    <color name="darkgray">#6D6D6D</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkred">#930000</color>
+    <color name="transparent">#60000000</color>
+    <color name="green">#3D9A59</color>
+    <color name="red">#E24141</color>
+    <color name="gold">#FFC20D</color>
+    <color name="background">#121212</color>
+    <color name="barcolor">#2F2F2F</color>
+
+    <color name="buttoncolor">#CF6679</color>
+    <color name="buttontextcolor">#FFFFFF</color>
+    <color name="btn_disable">#ABABAB</color>
+    <color name="boundarycolor">#434343</color>
+    <color name="buttonicon">#FFFFFF</color>
+    <color name="chattingboxMe">#3D9A59</color>
+    <!--    Because of some unknown bug, color of chattingboxother can not shown normally if the parameter
+    is "chattingboxOthers, thus, instead of barcolor"-->
+    <color name="chattingboxOthers">#2F2F2F</color>
+    <color name="texthintcolor">#A9A9A9</color>
+    <color name="error">#EFC46D</color>
+
+    <color name="accentText">#BB86FC</color>
+    <color name="iconInEditText">#2F2F2F</color>
+    <color name="inputeditTextColor">#121212</color>
+</resources>

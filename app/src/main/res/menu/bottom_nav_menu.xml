@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_running_solid"
+        android:title="Home"
+        android:fontFamily="casual"
+        />
+
+    <item
+        android:id="@+id/navigation_friends"
+        android:icon="@drawable/ic_users_solid"
+        android:title="Friends"
+        />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_address_card_solid"
+        android:title="Profile"
+        />
+</menu>

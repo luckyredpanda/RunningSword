@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        tools:context=".ui.profile.writingComment.WritingCommentActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:layout_marginTop="40dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImagesetting"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_photo"
+                android:layout_gravity="center_vertical"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/vt_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/Username" />
+
+            <TextView
+                android:id="@+id/vt_surDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:text="36 Days" />
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SWCardViewStyle_showInfo"
+            android:layout_marginTop="20dp">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/RatingBarModify"
+                android:layout_gravity="center_horizontal" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SWCardViewStyle_showInfo"
+            android:layout_marginTop="20dp">
+
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start|top"
+                android:textColor="@color/fontBackground"
+                android:hint="Please Write your comment"
+                android:inputType="textMultiLine" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

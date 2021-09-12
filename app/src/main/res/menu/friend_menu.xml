@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/friend_menu_create"
+        app:showAsAction="always"
+        android:visible="false"
+        android:icon="@drawable/ic_action_create"
+        android:title="Settings">
+    </item>
+
+    <item android:id="@+id/friend_menu_add"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_add"
+        android:title="Settings"
+        >
+    </item>
+    <item android:id="@+id/friend_menu_delete"
+        app:showAsAction="ifRoom"
+        android:title="Settings"
+        android:icon="@drawable/ic_action_delete"
+        android:visible="false"
+        >
+    </item>
+    <item android:id="@+id/friend_menu_return"
+        app:showAsAction="ifRoom"
+        android:title="Settings"
+        android:icon="@drawable/ic_action_return"
+        android:visible="false"
+        >
+    </item>
+</menu>

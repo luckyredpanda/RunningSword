@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SwordRunner" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/barcolor</item>
+        <item name="colorPrimaryVariant">@color/barcolor</item>
+        <item name="colorOnPrimary">@color/btn_disable</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/gray</item>
+        <item name="colorSecondaryVariant">@color/gray</item>
+        <item name="colorOnSecondary">@color/btn_disable</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/barcolor</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:actionMenuTextColor">@color/btn_disable</item>
+        <item name="android:textColor">@color/fontBackground</item>
+    </style>
+
+    <style name="SWCardViewStyle" parent="CardView">
+        <item name="cardCornerRadius">@dimen/card_CornerRadius</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/barcolor</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="cardBackgroundColor">@color/barcolor</item>
+    </style>
+
+    <style name="SWCardViewStyle_showInfo" parent="CardView">
+        <item name="cardCornerRadius">@dimen/card_CornerRadius</item>
+        <item name="contentPadding">@dimen/cardview_padding</item>
+        <item name="cardBackgroundColor">@color/barcolor</item>
+        <item name="android:layout_marginBottom">@dimen/card_distance</item>
+    </style>
+
+    <style name="Theme.SwordRunner.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.SwordRunner.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.SwordRunner.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.SwordRunner.TransparentActionBar" parent="@style/Theme.AppCompat">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="android:actionBarStyle">@style/SWTransparentActionBar</item>
+        <item name="android:actionOverflowMenuStyle" tools:targetApi="lollipop">@style/MyActionBar.MenuTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/blue</item>
+        <item name="actionBarStyle">@style/SWTransparentActionBar</item>
+        <item name="actionBarSize">100dp</item>
+    </style>
+
+    <style name="SWTransparentActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/SWTransparentActionBarTitleText</item>
+        <item name="titleTextStyle">@style/SWTransparentActionBarTitleText</item>
+        <item name="android:textAlignment">center</item>
+        <item name="actionMenuTextColor">@color/blue</item>
+    </style>
+
+    <style name="SWTransparentActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="MyActionBar.MenuTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+
+    </style>
+
+    <!--    BottomMenuBar Style-->
+    <style name="BottomMenuBar" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/red</item>
+        <item name="android:textColorSecondary">@color/btn_disable</item>
+    </style>
+
+    <!--    TextView Style-->
+    <style name="SWTextViewSubtitle_First" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/subtitleOne</item>
+        <item name="android:textColor">@color/fontBackground</item>
+    </style>
+    <style name="SWTextView_Body_Second" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/Body_Second</item>
+        <item name="android:textColor">@color/fontBackground</item>
+    </style>
+
+
+    <!-- EditText Style    -->
+    <style name="EditTextview">
+        <item name="android:textColor">@color/fontBackground</item>
+        <item name="android:drawablePadding">@dimen/edittext_padding</item>
+    </style>
+    <style name="ErrorAppearence" parent="@android:style/TextAppearance">
+        <item name="android:drawableTint" tools:targetApi="m">@color/error</item>
+        <item name="android:textColor">@color/error</item>
+        <item name="android:textSize">@dimen/Caption</item>
+    </style>
+    <style name="TextInputEditTextLayoutAppearance">
+        <item name="boxCornerRadiusBottomEnd">@dimen/RadiusSmall</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/RadiusSmall</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/RadiusSmall</item>
+        <item name="boxCornerRadiusTopStart">@dimen/RadiusSmall</item>
+        <item name="android:textColorHint">@color/background</item>
+        <item name="errorEnabled">false</item>
+        <item name="android:drawablePadding">@dimen/edittext_padding</item>
+        <item name="backgroundTint">@color/btn_disable</item>
+        <item name="drawableTint">@color/iconInEditText</item>
+    </style>
+
+
+    <!--    button Sytle-->
+    <style name="buttonAppearance">
+        <item name="backgroundTint">@color/buttoncolor</item>
+        <item name="android:textSize">@dimen/ButtunTextSize</item>
+        <item name="android:textColor">@color/buttontextcolor</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+    <!-- RatingBar Style-->
+    <style name="RatingBarModify" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/btn_disable</item>
+        <item name="colorControlActivated">@color/gold</item>
+    </style>
+    <!-- AlertDialog Style-->
+    <style name="AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <!-- 这里设置背景为透明，为了隐藏边框 -->
+        <item name="android:windowBackground">@color/gray</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 这里是修改顶部标题背景颜色，具体颜色自己定，可以是图片 -->
+        <item name="android:topDark">@color/gray</item>
+        <!-- 这里是修改内容区域背景颜色 -->
+        <item name="android:centerDark">@color/gray</item>
+        <item name="android:windowAnimationStyle">@android:color/transparent</item>
+    </style>
+
+
+</resources>

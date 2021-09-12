@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    tools:context=".ui.profile.ChangeUserNameActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/change_user_name_textview"
+        style="@style/SWTextViewSubtitle_First"
+        android:layout_width="118dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="277dp"
+        android:paddingBottom="10dp"
+        android:text="Username:" />
+
+    <EditText
+        android:id="@+id/change_user_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_user_name_textview"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:hint="type new username"
+        android:textColorHint="@color/texthintcolor"
+        android:background="@color/barcolor"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:textColor="@color/fontBackground"
+        android:textSize="@dimen/subtitleOne" />
+
+    <Button
+        android:id="@+id/change_user_name_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_user_name_edittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="change name"
+        style="@style/buttonAppearance"/>
+</RelativeLayout>

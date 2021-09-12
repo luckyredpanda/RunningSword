@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="Account">
+
+        <Preference
+            android:title="Sign out"
+            android:key="pref_key_sign_out"
+            />
+<!--        <Preference-->
+<!--            android:title="Delete account"-->
+<!--            android:key="pref_key_delete_account"-->
+<!--            android:summary="Wipe all my data from the server"-->
+<!--            />-->
+    </PreferenceCategory>
+
+<!--    <PreferenceCategory app:title="@string/messages_header">-->
+
+<!--        <SwitchPreferenceCompat-->
+<!--            app:key="sync"-->
+<!--            app:title="Notify for new chat messages" />-->
+
+
+
+<!--        &lt;!&ndash;ListPreference-->
+<!--            app:defaultValue="reply"-->
+<!--            app:entries="@array/reply_entries"-->
+<!--            app:entryValues="@array/reply_values"-->
+<!--            app:key="reply"-->
+<!--            app:title="@string/reply_title"-->
+<!--            app:useSimpleSummaryProvider="true" /&ndash;&gt;-->
+
+<!--    </PreferenceCategory>-->
+
+    <!--PreferenceCategory app:title="@string/sync_header">
+
+
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory-->
+
+    <PreferenceCategory app:title="About">
+        <Preference
+            android:key="version"
+            android:title="Version">
+            <!--intent android:action="your.package.path.to.Activity"/-->
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

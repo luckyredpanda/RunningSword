@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/store_id"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/store_avatar"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="30dp"
+        app:contentPaddingBottom="0dp"
+        app:cardBackgroundColor="@color/barcolor"
+        app:cardPreventCornerOverlap="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_action_search"
+                app:tint="@color/buttonicon"
+                android:id="@+id/search"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                app:tint="@color/buttonicon"
+                android:src="@drawable/check"
+                android:id="@+id/add_finish"
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_friends_add"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:id="@+id/image_avatar_add_friend"
+                    android:src="@null"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/username_add_friend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Username:"
+                            android:textSize="20dp" />
+                        <EditText
+                            android:id="@+id/edit_username_add_friend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/username_add_friend"
+                            android:paddingLeft="15dp"
+                            android:textColorHint="@color/texthintcolor"
+                            android:textColor="@color/fontBackground"
+                            android:hint="Enter username        " />
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edit_e_mail_add_friend"
+                            android:layout_toRightOf="@id/e_mail_add_friend"
+                            android:layout_marginStart="10dp"
+                            android:hint="Enter E-mail              "
+                            android:visibility="gone"
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Please fill in one of the message above"
+                        android:layout_below="@+id/image_avatar_add_friend"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/accentText"
+                        android:layout_marginStart="10dp"
+                        android:textSize="12sp"
+                        android:id="@+id/hint_add_friend"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail       "
+                android:textSize="20dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/e_mail_add_friend"
+                android:visibility="gone"
+                />
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_gravity="bottom"
+            />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

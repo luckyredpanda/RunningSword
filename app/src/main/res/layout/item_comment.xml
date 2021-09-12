@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/item_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatarImg_comment"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                tools:layout_editor_absoluteX="23dp"
+                tools:layout_editor_absoluteY="19dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/vt_username_mycomment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Username"
+                    android:textColor="@color/fontForeground"
+                    />
+
+                <TextView
+                    android:id="@+id/vt_date_mycomment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="@string/DataEx"
+                    android:textSize="10sp"
+                    android:textColor="@color/fontForeground"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/rb_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:progressTint="@color/gold"
+            />
+        <TextView
+            android:id="@+id/vt_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:textColor="@color/fontBackground"
+            android:text="TextView" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

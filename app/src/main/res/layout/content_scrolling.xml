@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/others_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.profile.OthersProfileActivity"
+    tools:showIn="@layout/activity_others_profile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatarImg1_others_userprofile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_photo"
+                app:civ_border_color="@color/blue"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/vt_username_userprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/Username"
+                style="@style/SWTextViewSubtitle_First"/>
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SWCardViewStyle_showInfo"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/vt_game_userprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    style="@style/SWTextViewSubtitle_First"
+                    android:text="Friend's Game" />
+                <TextView
+                    android:id="@+id/view_more_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    style="@style/SWTextViewSubtitle_First"
+                    android:text="@string/tv_details" />
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_marginRight="17dp"
+                        app:srcCompat="@drawable/single_player" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_marginRight="17dp"
+                        app:srcCompat="@drawable/single_player" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+
+                        app:srcCompat="@drawable/single_player" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SWCardViewStyle_showInfo">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    style="@style/SWTextViewSubtitle_First"
+                    android:text="@string/Comments" />
+
+                <TextView
+                    android:id="@+id/vt_bt_writing_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColorHint="@color/accentText"
+                    style="@style/SWTextViewSubtitle_First"
+                    android:text="@string/WriteComments" />
+
+                <TextView
+                    android:id="@+id/viewmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    style="@style/SWTextViewSubtitle_First"
+                    android:text="@string/tv_details" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/otherRecylerView"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="40dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+    <string-array name="periods">
+        <item>1 Day</item>
+        <item>2 Days</item>
+        <item>3 Days</item>
+        <item>4 Days</item>
+        <item>5 Days</item>
+        <item>6 Days</item>
+        <item>7 Days</item>
+        <item>10 Days</item>
+        <item>14 Days</item>
+        <item>30 Days</item>
+        <item>90 Days</item>
+    </string-array>
+    <string-array name="distances">
+        <item>1 km</item>
+        <item>2 km</item>
+        <item>3 km</item>
+        <item>5 km</item>
+        <item>10 km</item>
+        <item>25 km</item>
+        <item>35 km</item>
+        <item>50 km</item>
+        <item>100 km</item>
+        <item>250 km</item>
+    </string-array>
+</resources>
