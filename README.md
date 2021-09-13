@@ -9,30 +9,39 @@ Details can be found in Readme in branches, technical document can be found in t
 部分效果展示：
 
 图1:登陆和注册界面
+
 ![image](https://user-images.githubusercontent.com/31587409/133108149-af0c7f3c-8725-4c50-9259-e07fedb3e642.png)
 
 图2:游戏主页
+
 ![image](https://user-images.githubusercontent.com/31587409/133108210-abbf3b96-f6bf-4ee9-9d6d-c0c173be40f4.png)
 
 图3:逻辑展示
+
 ![image](https://user-images.githubusercontent.com/31587409/133108281-bf9199ca-2bf2-41f9-929f-945045ad0c02.png)
 
 图4:初始化游戏
+
 ![image](https://user-images.githubusercontent.com/31587409/133108373-69e2b3b8-eb3f-404f-91ff-7e6f3afbe9b9.png)
 
 图5:游戏和结算界面
+
 ![image](https://user-images.githubusercontent.com/31587409/133108437-5380d478-f183-48e1-ad78-ef41d1630e2b.png)
 
 图6:聊天界面
+
 ![image](https://user-images.githubusercontent.com/31587409/133108551-c6f4c2bc-33dd-452a-ba60-bfb72e5aa335.png)
 
 图7:聊天通知功能
+
 ![image](https://user-images.githubusercontent.com/31587409/133108637-ef37db90-1ddb-4332-8e14-bc31618f0495.png)
 
 图8:添加好友
+
 ![image](https://user-images.githubusercontent.com/31587409/133108729-fa1f96de-378c-41c1-baf6-3ae4e6729c9a.png)
 
 图9:评价系统
+
 ![image](https://user-images.githubusercontent.com/31587409/133108811-44f1e08c-52cd-406b-afd0-b9e872e723f0.png)
 
 
